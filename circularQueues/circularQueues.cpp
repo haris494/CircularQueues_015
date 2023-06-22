@@ -80,3 +80,7 @@ public:
 			}
 			cout << endl;
 		} 
+		else {
+			//jika FRONt_position > rear_postion > Rear_postion, iterasi dari FRONT hingga akhir array
+			while (FRONT_position <= max - 1) {
+				cout << queue_array[FRONT_position] << " ";
