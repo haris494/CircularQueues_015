@@ -61,8 +61,8 @@ public:
 	} 
 
 	void display() {
-		int FRONT_postion = FRONT;
-		int REAR_postion = REAR; 
+		int FRONT_position = FRONT;
+		int REAR_position= REAR; 
 
 		//cek apakah antrian kosong
 		if (FRONT == -1) {
@@ -73,4 +73,10 @@ public:
 		cout << "\nElements in the queue are: \n";
 
 		// jika FRONT_psition <=REAR-position Iterasi dari FRONT hingga REAR
-		if (FRONT_postion <= REAR_postion) {
+		if (FRONT_position <= REAR_position) {
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << " ";
+				FRONT_position++;
+			}
+			cout << endl;
+		} 
