@@ -137,4 +137,11 @@ int main() {
 			}
 			}
 		}
+		catch (exception& o) {
+			cout << "Check for the values entered." << endl;
+		}
+	}
+
+	return 0;
+} 
 
