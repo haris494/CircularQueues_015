@@ -58,11 +58,11 @@ public:
 			else
 				FRONT = FRONT + 1;
 		}
-	} 
+	}
 
 	void display() {
 		int FRONT_position = FRONT;
-		int REAR_position= REAR; 
+		int REAR_position = REAR;
 
 		//cek apakah antrian kosong
 		if (FRONT == -1) {
@@ -79,7 +79,7 @@ public:
 				FRONT_position++;
 			}
 			cout << endl;
-		} 
+		}
 		else {
 			//jika FRONt_position > rear_postion > Rear_postion, iterasi dari FRONT hingga akhir array
 			while (FRONT_position <= max - 1) {
@@ -87,8 +87,22 @@ public:
 				FRONT_position++;
 			}
 
-			FRONT_position = 0; 
+			FRONT_position = 0;
 
 			//iterasi dari awal array hingga REAR
 			while (FRONT_position <= REAR_position) {
 				cout << queue_array[FRONT_position] << " ";
+				FRONT_position++;
+			}
+			cout << endl;
+		}
+	}
+};
+
+int main() {
+	Queues q;
+	char ch;
+
+	while (true) {
+		try {
+			cout << "Menu" << endl;
