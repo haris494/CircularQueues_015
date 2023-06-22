@@ -63,3 +63,14 @@ public:
 	void display() {
 		int FRONT_postion = FRONT;
 		int REAR_postion = REAR; 
+
+		//cek apakah antrian kosong
+		if (FRONT == -1) {
+			cout << "Queue is empty\n";
+			return;
+		}
+
+		cout << "\nElements in the queue are: \n";
+
+		// jika FRONT_psition <=REAR-position Iterasi dari FRONT hingga REAR
+		if (FRONT_postion <= REAR_postion) {
